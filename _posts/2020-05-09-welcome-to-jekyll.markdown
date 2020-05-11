@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: single
+title:  "Manish's workspace!"
 date:   2020-05-09 17:55:25 -0400
 categories: jekyll update
 ---
