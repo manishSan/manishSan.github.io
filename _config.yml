@@ -1,0 +1,77 @@
+# Site settings
+title: "Manish Sanwal"
+description: >-
+  Director of AI at NewsCorp | Ethical AI | Expert in Tech Innovation |
+  Technology Thought Leader
+url: "https://manishsanwal.github.io"      # your site URL
+baseurl: ""                                # leave blank for user.github.io
+
+# Author
+author:
+  name: "Manish Sanwal"
+  email: "manish.sanwal@gmail.com"
+
+# Theme
+theme: "minimal-mistakes-jekyll"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections (for projects or other custom types)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/blog/:num/"
+
+# Defaults for pages/posts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "gallery"
+
+# Navigation (used by Minimal Mistakes)
+navigation:
+  - title: "About"
+    url: "/about/"
+  - title: "Experience"
+    url: "/experience/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Education"
+    url: "/education/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Feed & SEO
+feed:
+  path: atom.xml
+seo:
+  title: "{{ page.title }} | {{ site.title }}"
+  twitter:
+    username: your_twitter_handle
+  facebook:
+    publisher: https://www.facebook.com/your_fb_page
