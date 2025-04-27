@@ -12,7 +12,7 @@ author:
   email: "manish.sanwal@gmail.com"
 
 # # Theme
-theme: "jekyll-theme-chirpy"
+theme: jekyll-theme-chirpy
 
 # Use the Chirpy theme directly from GitHub
 # remote_theme: cotes2020/jekyll-theme-chirpy
