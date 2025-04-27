@@ -24,6 +24,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-remote-theme
+  - jekyll-redirect-from
 
 # Markdown
 markdown: kramdown
