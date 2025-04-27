@@ -11,8 +11,11 @@ author:
   name: "Manish Sanwal"
   email: "manish.sanwal@gmail.com"
 
-# Theme
-theme: "minimal-mistakes-jekyll"
+# # Theme
+theme: "jekyll-theme-chirpy"
+
+# Use the Chirpy theme directly from GitHub
+# remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Plugins
 plugins:
@@ -20,6 +23,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - jekyll-remote-theme
 
 # Markdown
 markdown: kramdown
