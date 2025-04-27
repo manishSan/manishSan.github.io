@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Tell search engines to index this page -->
+  <meta name="robots" content="index,follow">
+
+  <!-- Declare the real URL to index -->
+  <link rel="canonical" href="{{ page.redirect_to }}">
+
+  <!-- Client-side instant redirect -->
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
+
+  <!-- Optional: any site-wide CSS -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body>
+  <main style="max-width:600px;margin:2rem auto;font-family:sans-serif">
+    <h1>{{ page.title }}</h1>
+    <p><em>This page will redirect you shortly—if it doesn’t, <a href="{{ page.redirect_to }}">click here</a>.</em></p>
+    <section>
+      {{ content }}
+    </section>
+  </main>
+</body>
+</html>
